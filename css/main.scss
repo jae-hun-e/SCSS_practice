@@ -1,0 +1,18 @@
+@use "./static" as s;
+@use "./mixin" as m;
+
+@use "./reset";
+@use "./header";
+
+.main {
+  padding: 8px;
+  @include m.flexBox($direction: column, $justify: center);
+
+  section {
+    @include m.flexBox($direction: column);
+
+    article {
+      @include m.flexBox;
+    }
+  }
+}
