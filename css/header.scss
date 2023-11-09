@@ -1,11 +1,9 @@
-@use "./reset";
 @use "./static" as s;
 @use "./mixin" as m;
 
 .header {
   @include m.flexBox($justify: space-between);
   height: max-height(80px);
-
   padding: 16px;
   font-size: 12px;
 
@@ -29,50 +27,50 @@
       padding-left: 4px;
     }
   }
+}
 
-  .search-bar {
-    @include m.media(md) {
-      display: none;
-    }
-
-    @include m.flexBox;
-    flex-grow: 1;
-    height: 40px;
-    border: 2px solid s.$color-gray-normal;
-    border-radius: 50px;
-    margin: 0 8px;
-    .search-bar__icon {
-      @include m.svgColor(s.$color-gray-dark);
-      padding: {
-        left: 12px;
-        right: 8px;
-      }
-    }
-    .search-bar__input {
-      border: none;
-      width: 100%;
-      margin-right: 2px;
-    }
+.search-bar {
+  @include m.media(md) {
+    display: none;
   }
 
-  .auth {
-    .auth__log-in {
+  @include m.flexBox;
+  flex-grow: 1;
+  height: 40px;
+  border: 2px solid s.$color-gray-normal;
+  border-radius: 50px;
+  margin: 0 8px;
+  .search-bar__icon {
+    @include m.svgColor(s.$color-gray-dark);
+    padding: {
+      left: 12px;
+      right: 8px;
+    }
+  }
+  .search-bar__input {
+    border: none;
+    width: 100%;
+    margin-right: 2px;
+  }
+}
+
+.auth {
+  .auth__log-in {
+    background-color: s.$color-gray;
+    margin-right: 8px;
+  }
+  .auth__join {
+    background-color: s.$color-error;
+    color: white;
+  }
+  .auth__setting {
+    margin: 12px 0 12px 8px;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    @include m.svgColor(s.$color-gray-dark);
+    &:hover {
       background-color: s.$color-gray;
-      margin-right: 8px;
-    }
-    .auth__join {
-      background-color: s.$color-error;
-      color: white;
-    }
-    .auth__setting {
-      margin: 12px 0 12px 8px;
-      padding: 0;
-      width: 24px;
-      height: 24px;
-      @include m.svgColor(s.$color-gray-dark);
-      &:hover {
-        background-color: s.$color-gray;
-      }
     }
   }
 }

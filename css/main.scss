@@ -1,18 +1,12 @@
 @use "./static" as s;
 @use "./mixin" as m;
-
-@use "./reset";
-@use "./header";
+@use "./recommend";
 
 .main {
-  padding: 8px;
-  @include m.flexBox($direction: column, $justify: center);
+    padding: 8px;
+    @include m.flexBox($direction: column, $justify: center);
 
-  section {
-    @include m.flexBox($direction: column);
-
-    article {
-      @include m.flexBox;
+    section {
+        @include m.flexBox($direction: column);
     }
-  }
 }

@@ -2,57 +2,62 @@
 @use "sass:map";
 
 @mixin flexBox(
-  $direction: row,
-  $justify: flex-start,
-  $align: center,
-  $wrap: nowrap,
-  $content: normal
+    $direction: row,
+    $justify: flex-start,
+    $align: center,
+    $wrap: nowrap,
+    $content: normal,
+    $gap: 0
 ) {
-  display: flex;
-  flex-direction: $direction;
-  justify-content: $justify;
-  align-items: $align;
-  flex-wrap: $wrap;
-  @if ($wrap == wrap) {
-    align-content: $align;
-  } @else {
-    @if ($content != normal) {
-      @error 'wrap 속성이 아니면 align-content가 작동하지 않습니다.';
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+    flex-wrap: $wrap;
+    @if ($wrap == wrap) {
+        align-content: $align;
+    } @else {
+        @if ($content != normal) {
+            @error 'wrap 속성이 아니면 align-content가 작동하지 않습니다.';
+        }
     }
-  }
 }
 
 @mixin defaultButton(
-  $bgColor: white,
-  $color: black,
-  $border: none,
-  $radius: 0,
-  $cursor: pointer,
-  $font-size: s.$font-size-m
+    $bgColor: white,
+    $color: black,
+    $border: none,
+    $radius: 0,
+    $cursor: pointer,
+    $font-size: s.$font-size-m
 ) {
-  background-color: $bgColor;
-  color: $color;
-  border: $border;
-  border-radius: $radius;
-  cursor: $cursor;
-  font-size: $font-size;
+    background-color: $bgColor;
+    color: $color;
+    border: $border;
+    border-radius: $radius;
+    cursor: $cursor;
+    font-size: $font-size;
+    &:hover {
+        opacity: 60%;
+    }
 }
 
 @mixin svgColor($color: black) {
-  svg {
-    fill: $color;
-  }
+    svg {
+        fill: $color;
+    }
 }
 
 @mixin media($name) {
-  $breakPoint: (
-    sm: 576px,
-    md: 768px,
-    lg: 992px,
-    xl: 1200px,
-    xxl: 1400px,
-  );
-  @media all and (max-width: map.get($breakPoint, $name)) {
-    @content;
-  }
+    $breakPoint: (
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1400px,
+    );
+    @media all and (max-width: map.get($breakPoint, $name)) {
+        @content;
+    }
 }
