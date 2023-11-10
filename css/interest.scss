@@ -2,48 +2,51 @@
 @use "./mixin" as m;
 
 .interest {
-    margin: 48px 0;
+  margin: 48px 0;
 }
 
 .interest__grid {
-    display: grid;
-    width: 100%;
-    margin: 10px 0;
-    grid-template-columns: repeat(auto-fill, 226px);
-    justify-content: center;
-    gap: 8px;
+  width: 100%;
+  margin: 10px 0;
+  @include m.autoGridBox($columns: 226px, $justify: center, $gap: 8px);
 }
 
 @for $i from 1 through 10 {
-    .interest__item#{$i} {
-        padding: 0 16px 16px 0;
-        width: 210px;
-        height: 72px;
-        border-radius: 15px;
+  .interest__item#{$i} {
+    padding: 0 16px 16px 0;
+    width: 210px;
+    height: 72px;
+    border-radius: 15px;
 
-        $number: if($i < 10, "0#{$i}", "#{$i}");
-        @include m.bgImg(
-            $url: "../image/interest#{$number}.jpg",
-            $size: cover,
-            $repeat: no-repeat
-        );
-    }
+    $number: if($i < 10, "0#{$i}", "#{$i}");
+    @include m.bgImg(
+      $url: "../image/interest#{$number}.jpg",
+      $size: cover,
+      $repeat: no-repeat
+    );
+  }
 }
 
-.interest__contnent {
-    @include m.flexBox($justify: center, $align: center);
-    color: white;
-    font-weight: s.$font-weight-bold;
-    background-color: rgba(90, 90, 90, 0.5);
-    width: calc(100% + 16px);
-    height: calc(100% + 16px);
-    border-radius: 15px;
-    &:hover {
-        background-color: rgba(90, 90, 90, 0.7);
-    }
+.interest__content {
+  @include m.flexBox($justify: center, $align: center);
+  color: white;
+  font-weight: s.$font-weight-bold;
+  background-color: rgba(90, 90, 90, 0.5);
+  width: calc(100% + 16px);
+  height: calc(100% + 16px);
+  border-radius: 15px;
+  &:hover {
+    background-color: rgba(90, 90, 90, 0.7);
+  }
 }
 
 .interest__button {
-    @include m.defaultButton($radius: 50px, $bgColor: s.$color-gray);
-    padding: 8px 12px;
+  @include m.defaultButton($radius: 50px, $bgColor: s.$color-gray);
+  padding: 8px 12px;
+}
+
+@media all and (min-width: 1240px) {
+  .interest__grid {
+    grid-template-columns: repeat(5, 226px);
+  }
 }

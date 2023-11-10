@@ -5,11 +5,11 @@
 @use "./popular-ideas.scss";
 
 .main {
-    padding: 8px;
-    @include m.flexBox($direction: column, $justify: center);
+  padding: 8px;
+  @include m.flexBox($direction: column, $justify: center);
 
-    section {
-        @include m.flexBox($direction: column, $align: center);
-        width: 100%;
-    }
+  section {
+    @include m.flexBox($direction: column, $align: center);
+    width: 100%;
+  }
 }

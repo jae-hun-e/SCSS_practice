@@ -2,82 +2,89 @@
 @use "./mixin" as m;
 
 .recommend__title {
-    margin-top: 30px;
-    font-size: s.$font-size-4xlg;
-    font-weight: s.$font-weight-bold;
+  margin-top: 30px;
+  font-size: s.$font-size-4xlg;
+  font-weight: s.$font-weight-bold;
 }
 
 .recommend__list {
-    margin: 48px auto 0 auto;
-    width: 100%;
-    @include m.flexBox($gap: 4px, $justify: center);
+  margin: 48px auto 0 auto;
+  width: 100%;
+  @include m.flexBox($gap: 4px, $justify: center);
 }
 
 @for $i from 1 through 3 {
-    .recommend__item#{$i} {
-        flex-grow: 1;
-        flex-shrink: 0;
-        flex-basis: 245px;
-        max-width: 410px;
-        height: 258px;
-        border-radius: 25px;
-        @include m.bgImg(
-            $url: "../image/recomment#{$i}.jpg",
-            $size: cover,
-            $repeat: no-repeat
-        );
-    }
+  .recommend__item#{$i} {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 245px;
+    max-width: 410px;
+    height: 258px;
+    border-radius: 25px;
+    @include m.bgImg(
+      $url: "../image/recomment#{$i}.jpg",
+      $size: cover,
+      $repeat: no-repeat
+    );
+  }
 }
 
 .recommend__content {
-    background-color: rgba(128, 128, 128, 0.5);
-    border-radius: 25px;
-    @include m.flexBox(
-        $direction: column,
-        $justify: flex-end,
-        $align: flex-start,
-        $wrap: wrap,
-        $gap: 16px
-    );
-    width: calc(100% - 48px);
-    height: calc(100% - 48px);
-    font-size: s.$font-size-2xlg;
-    padding: 24px;
-    cursor: pointer;
+  background-color: rgba(128, 128, 128, 0.5);
+  border-radius: 25px;
+  @include m.flexBox(
+    $direction: column,
+    $justify: flex-end,
+    $align: flex-start,
+    $wrap: wrap,
+    $gap: 16px
+  );
+  width: calc(100% - 48px);
+  height: calc(100% - 48px);
+  font-size: s.$font-size-2xlg;
+  padding: 24px;
+  cursor: pointer;
 
-    &:hover {
-        background-color: rgba(128, 128, 128, 0.7);
-        border-radius: 25px;
-    }
+  &:hover {
+    background-color: rgba(128, 128, 128, 0.7);
+    border-radius: 25px;
+  }
 }
 
 .recommend__content--title {
-    color: white;
-    font-weight: s.$font-weight-bold;
+  color: white;
+  font-weight: s.$font-weight-bold;
 }
 
 $button-type: add, create, try;
 @each $type in $button-type {
-    .recommend__content--#{$type} {
-        @include m.defaultButton($radius: 50px, $bgColor: s.$color-gray);
-        padding: 8px 12px;
-    }
+  .recommend__content--#{$type} {
+    @include m.defaultButton($radius: 50px, $bgColor: s.$color-gray);
+    padding: 8px 12px;
+  }
 }
 
 @include m.media(md) {
-    .recommend__list {
-        @include m.flexBox($direction: column, $gap: 4px, $align: center);
+  .recommend__list {
+    @include m.flexBox($direction: column, $gap: 4px, $align: center);
+  }
+  @for $i from 1 through 3 {
+    .recommend__item#{$i} {
+      width: 475px;
+      height: 160px;
+      flex-basis: 0;
+      max-width: none;
     }
-    @for $i from 1 through 3 {
-        .recommend__item#{$i} {
-            width: 480px;
-            height: 160px;
-            flex-basis: 0;
-        }
-    }
+  }
 
-    .recommend__content {
-        @include m.flexBox($wrap: wrap, $gap: 16px);
-        height: calc(160px - 48px);
-    }
+  .recommend__content {
+    @include m.flexBox(
+      $direction: column,
+      $wrap: wrap,
+      $gap: 16px,
+      $justify: flex-end,
+      $align: flex-start
+    );
+    height: calc(160px - 48px);
+  }
 }
