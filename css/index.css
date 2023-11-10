@@ -592,6 +592,7 @@ input:focus {
   width: 100%;
   height: 230px;
   border-radius: 20px;
+  cursor: pointer;
   background-image: url("../image/popular-ideas01.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -637,6 +638,7 @@ input:focus {
   width: 100%;
   height: 260px;
   border-radius: 20px;
+  cursor: pointer;
   background-image: url("../image/popular-ideas02.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -682,6 +684,7 @@ input:focus {
   width: 100%;
   height: 200px;
   border-radius: 20px;
+  cursor: pointer;
   background-image: url("../image/popular-ideas03.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -727,6 +730,7 @@ input:focus {
   width: 100%;
   height: 230px;
   border-radius: 20px;
+  cursor: pointer;
   background-image: url("../image/popular-ideas04.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -772,6 +776,7 @@ input:focus {
   width: 100%;
   height: 260px;
   border-radius: 20px;
+  cursor: pointer;
   background-image: url("../image/popular-ideas05.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -817,6 +822,7 @@ input:focus {
   width: 100%;
   height: 200px;
   border-radius: 20px;
+  cursor: pointer;
   background-image: url("../image/popular-ideas06.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -862,6 +868,7 @@ input:focus {
   width: 100%;
   height: 230px;
   border-radius: 20px;
+  cursor: pointer;
   background-image: url("../image/popular-ideas07.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -907,6 +914,7 @@ input:focus {
   width: 100%;
   height: 260px;
   border-radius: 20px;
+  cursor: pointer;
   background-image: url("../image/popular-ideas08.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -952,6 +960,7 @@ input:focus {
   width: 100%;
   height: 200px;
   border-radius: 20px;
+  cursor: pointer;
   background-image: url("../image/popular-ideas09.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -997,6 +1006,7 @@ input:focus {
   width: 100%;
   height: 230px;
   border-radius: 20px;
+  cursor: pointer;
   background-image: url("../image/popular-ideas10.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1042,6 +1052,7 @@ input:focus {
   width: 100%;
   height: 260px;
   border-radius: 20px;
+  cursor: pointer;
   background-image: url("../image/popular-ideas11.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1087,6 +1098,7 @@ input:focus {
   width: 100%;
   height: 200px;
   border-radius: 20px;
+  cursor: pointer;
   background-image: url("../image/popular-ideas12.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1132,6 +1144,7 @@ input:focus {
   width: 100%;
   height: 230px;
   border-radius: 20px;
+  cursor: pointer;
   background-image: url("../image/popular-ideas13.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1177,6 +1190,7 @@ input:focus {
   width: 100%;
   height: 260px;
   border-radius: 20px;
+  cursor: pointer;
   background-image: url("../image/popular-ideas14.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1222,6 +1236,7 @@ input:focus {
   width: 100%;
   height: 200px;
   border-radius: 20px;
+  cursor: pointer;
   background-image: url("../image/popular-ideas15.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1267,6 +1282,7 @@ input:focus {
   width: 100%;
   height: 230px;
   border-radius: 20px;
+  cursor: pointer;
   background-image: url("../image/popular-ideas16.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1312,6 +1328,7 @@ input:focus {
   width: 100%;
   height: 260px;
   border-radius: 20px;
+  cursor: pointer;
   background-image: url("../image/popular-ideas17.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1357,6 +1374,7 @@ input:focus {
   width: 100%;
   height: 200px;
   border-radius: 20px;
+  cursor: pointer;
   background-image: url("../image/popular-ideas18.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1402,6 +1420,7 @@ input:focus {
   width: 100%;
   height: 230px;
   border-radius: 20px;
+  cursor: pointer;
   background-image: url("../image/popular-ideas19.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1447,6 +1466,7 @@ input:focus {
   width: 100%;
   height: 260px;
   border-radius: 20px;
+  cursor: pointer;
   background-image: url("../image/popular-ideas20.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1492,6 +1512,7 @@ input:focus {
   width: 100%;
   height: 200px;
   border-radius: 20px;
+  cursor: pointer;
   background-image: url("../image/popular-ideas21.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1537,6 +1558,7 @@ input:focus {
   width: 100%;
   height: 230px;
   border-radius: 20px;
+  cursor: pointer;
   background-image: url("../image/popular-ideas22.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1582,6 +1604,7 @@ input:focus {
   width: 100%;
   height: 260px;
   border-radius: 20px;
+  cursor: pointer;
   background-image: url("../image/popular-ideas23.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1627,6 +1650,7 @@ input:focus {
   width: 100%;
   height: 200px;
   border-radius: 20px;
+  cursor: pointer;
   background-image: url("../image/popular-ideas24.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1672,6 +1696,7 @@ input:focus {
   width: 100%;
   height: 230px;
   border-radius: 20px;
+  cursor: pointer;
   background-image: url("../image/popular-ideas25.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1717,6 +1742,7 @@ input:focus {
   width: 100%;
   height: 260px;
   border-radius: 20px;
+  cursor: pointer;
   background-image: url("../image/popular-ideas26.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1762,6 +1788,7 @@ input:focus {
   width: 100%;
   height: 200px;
   border-radius: 20px;
+  cursor: pointer;
   background-image: url("../image/popular-ideas27.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1807,6 +1834,7 @@ input:focus {
   width: 100%;
   height: 230px;
   border-radius: 20px;
+  cursor: pointer;
   background-image: url("../image/popular-ideas28.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1852,6 +1880,7 @@ input:focus {
   width: 100%;
   height: 260px;
   border-radius: 20px;
+  cursor: pointer;
   background-image: url("../image/popular-ideas29.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1897,6 +1926,7 @@ input:focus {
   width: 100%;
   height: 200px;
   border-radius: 20px;
+  cursor: pointer;
   background-image: url("../image/popular-ideas30.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1942,6 +1972,7 @@ input:focus {
   width: 100%;
   height: 230px;
   border-radius: 20px;
+  cursor: pointer;
   background-image: url("../image/popular-ideas31.jpg");
   background-size: cover;
   background-repeat: no-repeat;

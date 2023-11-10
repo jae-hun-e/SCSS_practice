@@ -1,8 +1,8 @@
-@use "./static" as s;
-@use "./mixin" as m;
-@use "./recommend";
-@use "./interest.scss";
-@use "./popular-ideas.scss";
+@use "../utils/static" as s;
+@use "../utils/mixin" as m;
+@use "mainItems/recommend";
+@use "mainItems/interest";
+@use "mainItems/popular-ideas";
 
 .main {
   padding: 8px;

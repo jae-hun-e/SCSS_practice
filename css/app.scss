@@ -1,4 +1,3 @@
-@use "./reset";
-@use "./header";
-@use "./main";
-@use "recommend";
+@use "./utils/reset";
+@use "./components/header";
+@use "./components/main";

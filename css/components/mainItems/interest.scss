@@ -1,5 +1,5 @@
-@use "./static" as s;
-@use "./mixin" as m;
+@use "../../utils/static" as s;
+@use "../../utils/mixin" as m;
 
 .interest {
   margin: 48px 0;
